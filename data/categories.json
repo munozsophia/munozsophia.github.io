@@ -6,6 +6,12 @@
             "locales": {
                 "en": {
                     "title": "Home"
+                },
+                "es": {
+                    "title": "Inicio"
+                },
+                "fr": {
+                    "title": "Accueil"
                 }
             }
         },
@@ -15,6 +21,12 @@
             "locales": {
                 "en": {
                     "title": "History"
+                },
+                "es": {
+                    "title": "Historial"
+                },
+                "fr": {
+                    "title": "Historique"
                 }
             }
         },
@@ -24,6 +36,12 @@
             "locales": {
                 "en": {
                     "title": "Showcase"
+                },
+                "es": {
+                    "title": "Proyectos"
+                },
+                "fr": {
+                    "title": "Réalisations"
                 }
             }
         },
@@ -33,6 +51,12 @@
             "locales": {
                 "en": {
                     "title": "More"
+                },
+                "es": {
+                    "title": "Más"
+                },
+                "fr": {
+                    "title": "Plus"
                 }
             }
         }
