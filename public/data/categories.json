@@ -1,0 +1,64 @@
+{
+    "categories": [
+        {
+            "id": "home",
+            "faIcon": "fa-regular fa-user",
+            "locales": {
+                "en": {
+                    "title": "Home"
+                },
+                "es": {
+                    "title": "Inicio"
+                },
+                "fr": {
+                    "title": "Accueil"
+                }
+            }
+        },
+        {
+            "id": "background",
+            "faIcon": "fa-regular fa-clock",
+            "locales": {
+                "en": {
+                    "title": "History"
+                },
+                "es": {
+                    "title": "Historial"
+                },
+                "fr": {
+                    "title": "Historique"
+                }
+            }
+        },
+        {
+            "id": "showcase",
+            "faIcon": "fa-regular fa-folder-open",
+            "locales": {
+                "en": {
+                    "title": "Showcase"
+                },
+                "es": {
+                    "title": "Proyectos"
+                },
+                "fr": {
+                    "title": "Réalisations"
+                }
+            }
+        },
+        {
+            "id": "more",
+            "faIcon": "fa-regular fa-object-ungroup",
+            "locales": {
+                "en": {
+                    "title": "More"
+                },
+                "es": {
+                    "title": "Más"
+                },
+                "fr": {
+                    "title": "Plus"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Sophia Munoz",
+    "profilePictureUrl": "images/content/pfp.jpg",
+    "resumePdfUrl": "",
+    "statusCircleVisible": true,
+    "statusCircleVariant": "available",
+    "statusCircleHoverMessage": "status_message_available_for_freelance",
+    "locales": {
+        "en": {
+            "localized_name": "Sophia Munoz",
+            "localized_name_stylized": "<img src='images/content/logo-small.svg' style='width:27px; margin-right:9px;'><strong>Sophia {{Munoz}}</strong>",
+            "status_message_available_for_freelance": "Available for hire!",
+            "roles": [
+                "Computer Science Student",
+                "Graduating May 2027",
+                "I like Computer Graphics",
+                "I like Physics Simulation",
+                "I like Game Development"
+            ],
+            "name_pronunciation_ipa": "",
+            "name_pronunciation_audio_url": ""
+        },
+        "es": {
+            "status_message_available_for_freelance": "¡Disponible para trabajar!",
+            "roles": [
+                "Estudiante de Ciencias de la Computación",
+                "Graduación en Mayo de 2027",
+                "Me gustan la computación gráfica",
+                "Me gusta la simulación de física",
+                "Me gusta el desarrollo de videojuegos"
+            ]
+        },
+        "fr": {
+            "status_message_available_for_freelance": "Disponible pour travailler!",
+            "roles": [
+                "Étudiant en informatique",
+                "Diplôme prévu en Mai 2027",
+                "J'aime l'informatique graphique",
+                "J'aime la simulation de physique",
+                "J'aime le développement de jeux vidéo"
+            ]
+        }
+    }
+}
