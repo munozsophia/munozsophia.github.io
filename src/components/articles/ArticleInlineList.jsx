@@ -35,6 +35,10 @@ function ArticleInlineList({ dataWrapper, id }) {
 function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
     const viewport = useViewport()
 
+    // cover is section 1
+    const isCoverSection = dataWrapper.sectionId === "about"
+    const [emailVisible, setEmailVisible] = useState(false)
+
     const maxItems = viewport.getValueFromBreakpointHash({
         xxl: 5,
         xl: 4,
@@ -55,7 +59,11 @@ function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
         <ul className={`article-inline-list-items ${listClass}`}>
             {slicedItems.map((itemWrapper, key) => (
                 <ArticleInlineListItem itemWrapper={itemWrapper}
-                                       key={key}/>
+                                       key={key}
+                                       // add parameters
+                                       emailVisible={emailVisible}
+                                       setEmailVisible={setEmailVisible}
+                                       showHideEmail={isCoverSection && itemWrapper.faIconWithFallback?.includes('fa-envelope')}/>
             ))}
         </ul>
     )
@@ -63,10 +71,30 @@ function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
 
 /**
  * @param {ArticleItemDataWrapper} itemWrapper
+ * @param {Boolean} emailVisible - whether the email address is currently shown
+ * @param {Function} setEmailVisible - toggles the email visibility state
+ * @param {Boolean} showHideEmail - whether this item should have show/hide behavior
  * @return {JSX.Element}
  * @constructor
  */
-function ArticleInlineListItem({ itemWrapper }) {
+function ArticleInlineListItem({ itemWrapper, emailVisible, setEmailVisible, showHideEmail }) {
+    if (showHideEmail) {
+        return (
+            <li className={`article-inline-list-item text-4`}
+                onClick={(e) => {if (!emailVisible) {e.preventDefault(); setEmailVisible(true)}}}>
+                <Link href={emailVisible ? itemWrapper.link?.href : null}
+                      tooltip={emailVisible ? itemWrapper.link?.tooltip : null}
+                      metadata={itemWrapper.link?.metadata}>
+                    <i className={`article-inline-list-item-icon ${itemWrapper.faIconWithFallback}`}
+                       style={itemWrapper.faIconStyle}/>
+                    <span className={`article-inline-list-item-label`}>
+                        {emailVisible ? itemWrapper.label : 'Show my email'}
+                    </span>
+                </Link>
+            </li>
+        )
+    }
+
     return (
         <li className={`article-inline-list-item text-4`}>
             <Link href={itemWrapper.link?.href || null}
