@@ -304,6 +304,20 @@
                     }
                 }
             ]
+        },
+        {
+            "id": 5,
+            "component": "ArticleJoke",
+            "locales": {
+                "en": {"title": "{{Programming}} Joke of the Day"},
+                "es": {"title": "{Chiste de Programación}} del Día"},
+                "fr": {"title": "{{Blague de Programmation}} du Jour"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": []
         }
     ]
 }
