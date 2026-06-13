@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import Article from "/src/components/articles/base/Article.jsx"
 import Link from "/src/components/generic/Link.jsx"
 import {useViewport} from "/src/providers/ViewportProvider.jsx"
+import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 
 /**
  * @param {ArticleDataWrapper} dataWrapper
@@ -34,7 +35,7 @@ function ArticleInlineList({ dataWrapper, id }) {
  */
 function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
     const viewport = useViewport()
-
+    const language = useLanguage()
     // cover is section 1
     const isCoverSection = dataWrapper.sectionId === "about"
     const [emailVisible, setEmailVisible] = useState(false)
@@ -63,7 +64,8 @@ function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
                                        // add parameters
                                        emailVisible={emailVisible}
                                        setEmailVisible={setEmailVisible}
-                                       showHideEmail={isCoverSection && itemWrapper.faIconWithFallback?.includes('fa-envelope')}/>
+                                       showHideEmail={isCoverSection && itemWrapper.faIconWithFallback?.includes('fa-envelope')}
+                                       language={language}/>
             ))}
         </ul>
     )
@@ -74,10 +76,11 @@ function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
  * @param {Boolean} emailVisible - whether the email address is currently shown
  * @param {Function} setEmailVisible - toggles the email visibility state
  * @param {Boolean} showHideEmail - whether this item should have show/hide behavior
+ * @param {Object} lanugage - the language provider for translations
  * @return {JSX.Element}
  * @constructor
  */
-function ArticleInlineListItem({ itemWrapper, emailVisible, setEmailVisible, showHideEmail }) {
+function ArticleInlineListItem({ itemWrapper, emailVisible, setEmailVisible, showHideEmail, language }) {
     if (showHideEmail) {
         return (
             <li className={`article-inline-list-item text-4`}
@@ -88,7 +91,7 @@ function ArticleInlineListItem({ itemWrapper, emailVisible, setEmailVisible, sho
                     <i className={`article-inline-list-item-icon ${itemWrapper.faIconWithFallback}`}
                        style={itemWrapper.faIconStyle}/>
                     <span className={`article-inline-list-item-label`}>
-                        {emailVisible ? itemWrapper.label : 'Show my email'}
+                        {emailVisible ? itemWrapper.label : language.getString("show_my_email")}
                     </span>
                 </Link>
             </li>
