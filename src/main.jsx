@@ -1,16 +1,16 @@
 import "/src/styles/app.scss"
-import {StrictMode, useEffect, useState} from 'react'
+import {StrictMode, useEffect, useState, useRef} from 'react'
 import {createRoot} from 'react-dom/client'
 import {useApi} from "/src/hooks/api.js"
 import {useConstants} from "/src/hooks/constants.js"
 import {useUtils} from "/src/hooks/utils.js"
 import Preloader from "/src/components/loaders/Preloader.jsx"
 import DataProvider, {useData} from "/src/providers/DataProvider.jsx"
-import LanguageProvider from "/src/providers/LanguageProvider.jsx"
+import LanguageProvider, {useLanguage} from "/src/providers/LanguageProvider.jsx"
 import ViewportProvider from "/src/providers/ViewportProvider.jsx"
 import ThemeProvider from "/src/providers/ThemeProvider.jsx"
 import LocationProvider from "/src/providers/LocationProvider.jsx"
-import FeedbacksProvider from "/src/providers/FeedbacksProvider.jsx"
+import FeedbacksProvider, {useFeedbacks} from "/src/providers/FeedbacksProvider.jsx"
 import InputProvider from "/src/providers/InputProvider.jsx"
 import NavigationProvider from "/src/providers/NavigationProvider.jsx"
 import Portfolio from "/src/components/Portfolio.jsx"
@@ -151,6 +151,7 @@ const AppCapabilitiesWrapper = ({ children }) => {
                                               categories={appCategories}>
                                 <NavigationProvider sections={appSections}
                                                     categories={appCategories}>
+                                    <WelcomeCookieHandler/>
                                     {children}
                                 </NavigationProvider>
                             </LocationProvider>
@@ -160,4 +161,44 @@ const AppCapabilitiesWrapper = ({ children }) => {
             </ViewportProvider>
         </LanguageProvider>
     )
+}
+
+/**
+ * Handles cookie-based welcome notification for first-time and returning visitors.
+ * @return {null}
+ * @constructor
+ */
+const WelcomeCookieHandler = () => {
+    const {displayNotification} = useFeedbacks()
+    const language = useLanguage()
+    const hasRun = useRef(false)
+
+    useEffect(() => {
+        if (hasRun.current) return
+        hasRun.current = true
+
+        const now = new Date().toLocaleString()
+        if (document.cookie.indexOf("lastVisit") < 0) {
+            // first-time visit - no cookie found
+            displayNotification(
+                language.getString("welcome"),
+                language.getString("welcome_first_time"), "default"
+            )
+        } else {
+            // returning visit - cookie found, extract date
+            const lastVisit = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('lastVisit='))
+                ?.split('=')[1]
+
+            displayNotification(
+                language.getString("welcome"),
+                language.getString("welcome_back").replace("{date}", decodeURIComponent(lastVisit)), "default"
+            )
+        }
+
+        // update the cookie with current visit time
+        document.cookie = `lastVisit=${encodeURIComponent(now)}; path=/; max-age=31536000`
+    }, [])
+    return null
 }
