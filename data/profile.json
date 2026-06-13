@@ -8,7 +8,7 @@
     "locales": {
         "en": {
             "localized_name": "Sophia Munoz",
-            "localized_name_stylized": "<img src='images/content/logo-small.svg' style='width:27px; margin-right:9px;'><strong>Sophia {{Munoz}}</strong>",
+            "localized_name_stylized": "<img src='images/svg/logo-small.svg' style='width:27px; margin-right:9px;'><strong>Sophia {{Munoz}}</strong>",
             "status_message_available_for_freelance": "Available for hire!",
             "roles": [
                 "Computer Science Student",

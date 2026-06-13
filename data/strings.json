@@ -52,9 +52,13 @@
             "send_another_message": "Send another message",
             "send_message": "Send Message",
             "sending_message": "Sending message...",
+            "show_my_email": "Show my email",
             "subject": "Subject",
             "toggle_sidebar": "Toggle sidebar",
             "watch_video": "Watch Video",
+            "welcome": "Welcome!",
+            "welcome_first_time": "Welcome to my homepage for the first time!",
+            "welcome_back": "Welcome back! Your last visit was {date}",
             "yes": "Yes"
         },
         "es": {
@@ -109,9 +113,13 @@
             "send_another_message": "Enviar otro mensaje",
             "send_message": "Enviar mensaje",
             "sending_message": "Enviando mensaje...",
+            "show_my_email": "Mostrar mi correo",
             "subject": "Asunto",
             "toggle_sidebar": "Alternar barra lateral",
             "watch_video": "Ver video",
+            "welcome": "¡Bienvenido!",
+            "welcome_first_time": "¡Bienvenido a mi página por primera vez!",
+            "welcome_back": "¡Bienvenido de nuevo! Tu última visita fue el {date}",
             "yes": "Sí"
         },
         "fr": {
@@ -166,9 +174,13 @@
             "send_another_message": "Envoyer un autre message",
             "send_message": "Envoyer le message",
             "sending_message": "Envoi du message...",
+            "show_my_email": "Afficher mon e-mail",
             "subject": "Objet",
             "toggle_sidebar": "Basculer la barre latérale",
             "watch_video": "Regarder la vidéo",
+            "welcome": "Bienvenue!",
+            "welcome_first_time": "Bienvenue sur ma page pour la première fois!",
+            "welcome_back": "Bon retour! Votre dernière visite était le {date}",
             "yes": "Oui"
         }
     }
