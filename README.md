@@ -8,7 +8,7 @@
 
 **Email**: [mailto:munozsa@mail.uc.edu](munozsa@mail.uc.edu)
 
-![Sophia's headshot](../images/content/pfp.jpg)
+![Sophia's headshot](public/images/content/pfp.jpg)
 
 # Individual Project 1 - Professional Profile Website and API Integration on github.io Cloud Service
 
