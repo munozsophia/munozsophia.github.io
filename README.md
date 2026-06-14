@@ -124,7 +124,7 @@ const drawTime = (ctx, radius) => {
 
 ##### iii. showHide Email
 
-
+I implemented the showHide email function with an onClick as an inline element in `ArticleInlineList`. To do this I updated the component to add the functionality if the element has an `fa-email` icon and is located in the `cover.json` section \(About Me). I thins case I used the React states to achieve this part.
 
 ```jsx
 const [emailVisible, setEmailVisible] = useState(false)
@@ -149,7 +149,28 @@ if (showHideEmail) {
 
 ##### iv. Random Fact Generator
 
+For the functionality of my choice, I chose to implement the fact generator using [Useless Facts API](https://uselessfacts.jsph.pl/). As previously mentioned for the other implementations, I created an `ArticleFactGenerator` component. I used jQuery's `$.get()` and added a button to generate a new fact onClick.
 
+```jsx
+const fetchFact = () => {
+    setLoading(true)
+    $.get("https://uselessfacts.jsph.pl/api/v2/facts/random?language=en",
+        function(result) {
+            if (!result || !result.text) {
+                setLoading(false)
+                return
+            }
+            setFact(result.text)
+            setLoading(false)
+        }
+    ).fail(function() {
+        setLoading(false)
+    })
+}
+```
+
+![Fact Generator](public/images/content/project-1-fact-generator.png)
+*Fact Generator*
 
 #### b. Public Web API Integration
 
