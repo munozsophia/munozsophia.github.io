@@ -4,6 +4,7 @@ import {useParser} from "/src/hooks/parser.js"
 import ArticleCards from "/src/components/articles/ArticleCards.jsx"
 import ArticleClock from "/src/components/articles/ArticleClock.jsx"
 import ArticleContactForm from "/src/components/articles/ArticleContactForm.jsx"
+import ArticleFactGenerator from "/src/components/articles/ArticleFactGenerator.jsx"
 import ArticleFacts from "/src/components/articles/ArticleFacts.jsx"
 import ArticleInfoList from "/src/components/articles/ArticleInfoList.jsx"
 import ArticleInlineList from "/src/components/articles/ArticleInlineList.jsx"
@@ -38,6 +39,7 @@ SectionBody.ARTICLES = {
     ArticleCards,
     ArticleClock,
     ArticleContactForm,
+    ArticleFactGenerator,
     ArticleFacts,
     ArticleInfoList,
     ArticleInlineList,
