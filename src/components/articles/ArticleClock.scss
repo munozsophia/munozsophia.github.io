@@ -1,0 +1,18 @@
+.article-clock {
+    .article-clock-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .article-clock-digital {
+        text-align: center;
+    }
+
+    .article-clock-analog {
+        background-color: #999;
+        border-radius: 50%;
+    }
+}

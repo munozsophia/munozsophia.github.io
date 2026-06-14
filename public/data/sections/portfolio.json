@@ -54,6 +54,16 @@
                             "title": "WAPH Course Overview",
                             "text": "An [[HTML page]] that goes overviews the course and projects of Web Application Programming and Hacking.",
                             "tags": ["Course", "HTML"]
+                        },
+                        "es": {
+                            "title": "Descripción General del Curso WAPH",
+                            "text": "Una [[página HTML]] que ofrece una visión general del curso y los proyectos de Programación y Hacking de Aplicaciones Web.",
+                            "tags": ["Curso", "HTML"]
+                        },
+                        "fr": {
+                            "title": "Aperçu du cours WAPH",
+                            "text": "Une [[page HTML]] qui donne un aperçu du cours et des projets de Programmation et de Hacking d'Applications Web.",
+                            "tags": ["Cours", "HTML"]
                         }
                     }
                 }

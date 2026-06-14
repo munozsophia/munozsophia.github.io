@@ -20,5 +20,16 @@
             }
         }
     },
-    "articles": []
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleClock",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": []
+        }
+    ]
 }
