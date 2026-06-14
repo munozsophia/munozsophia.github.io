@@ -314,16 +314,6 @@
                 "order_items_sort": "asc"
             },
             "items": []
-        },
-        {
-            "id": 6,
-            "component": "ArticleWeather",
-            "locales": {},
-            "settings": {
-                "order_items_by": "id",
-                "order_items_sort": "asc"
-            },
-            "items": []
         }
     ]
 }
