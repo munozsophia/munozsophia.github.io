@@ -176,6 +176,46 @@ const fetchFact = () => {
 
 ##### i. JokeAPI Integration
 
+As for the Public Web JokeAPI, I create a new `ArticleJoke` component to generate a single-type joke every minute using `setInterval(fetchJoke, 60000)`. I also managed to implement this API using jQuery's `$.get()`.
+
+```jsx
+const fetchJoke = () => {
+    $.get("https://v2.jokeapi.dev/joke/Any?type=single",
+        function(result) {
+            if (!result || !result.joke) return
+            setJoke(result.joke)
+        }
+    )
+}
+ 
+useEffect(() => {
+    fetchJoke()
+    const interval = setInterval(fetchJoke, 60000)
+    return () => clearInterval(interval)
+}, [])
+```
+
+![Web JokeAPI Integration](public/images/content/project-1-jokeapi.png)
+*Web JokeAPI Integration*
+
 ##### ii. Weatherbit API Integration
+
+```jsx
+const fetchWeather = (lat, lon) => {
+    fetch(`https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=${apiKey}&units=I`)
+        .then(response => response.json())
+        .then(result => {
+            if (!result || !result.data || !result.data[0]) {
+                setError("Unable to load weather data.")
+                return
+            }
+            setWeather(result.data[0])
+        })
+        .catch(() => setError("Unable to load weather data."))
+}
+```
+
+![Web Weatherbit.io Integration](public/images/content/project-1-weatherbit.png)
+*Web Weatherbit.io Integration*
 
 #### c. JavaScript Cookies
