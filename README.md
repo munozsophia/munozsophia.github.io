@@ -10,7 +10,7 @@
 
 ![Sophia's headshot](public/images/content/pfp.jpg)
 
-# Individual Project 1 - Professional Profile Website and API Integration on github.io Cloud Service
+# Individual Project 1 - Professional Profile Website
 
 ## The Project's Overview
 
@@ -52,9 +52,9 @@ I created another HTML page \(`waph.html`), which is an overview of the `Web App
 
 #### a. Open-Source CSS Framework (Bootstrap)
 
-As for the implementation of the template, the website is built using a React template. This template uses Bootstrap 5 for the layout and component styling. This framework was a great guide to implmenting my portfolio as professional and informative.
+As for the implementation of the template, the website is built using a React template. This template uses Bootstrap 5 for the layout and component styling. This framework was a great guide to implementing my portfolio as professional and informative.
 
-#### b. Page Tracker (Google Analytics)
+#### b. Page Tracker
 
 I decided to integrate the page tracker using Google Analytics. The documentation had me paste the code below into the `index.html` file. Since Google Analytics doesn't provide a way to implement images withing a website I shared my Realtime Dashboard from Google Analytics of my website visits.
 
@@ -78,11 +78,78 @@ I decided to integrate the page tracker using Google Analytics. The documentatio
 
 ##### i. Digital Clock
 
+I created a new `ArticleClock` component to implement a digital clock. I used `useState`, `useEffect`, and `setInterval` to essentially imitate the `displayTime()` function in Lab 2 as a React component.
+
+```jsx
+const [time, setTime] = useState(new Date())
+ 
+useEffect(() => {
+    const interval = setInterval(() => {
+        setTime(new Date())
+    }, 1000)
+ 
+    return () => clearInterval(interval)
+}, [])
+```
+
+![Digital Clock](public/images/content/project-1-clock.png)
+*Digital Clock*
+
 ##### ii. Analog Clock
+
+For the analog clock, I used similar functions from Lab 2's `clock.js`, except they are implemented as functions inside the `ArticleClock` component. The functions are:
+
+- `drawFace()`
+- `drawNumbers()`
+- `drawTime()`
+
+I also had hook `useEffect` redrawn each second as the seconds hand ticked.
+
+```jsx
+const drawTime = (ctx, radius) => {
+    const now = time
+    let hour = now.getHours()
+    let minute = now.getMinutes()
+    let second = now.getSeconds()
+ 
+    hour = hour % 12
+    hour = (hour * Math.PI / 6) + (minute * Math.PI / (6 * 60)) + (second * Math.PI / (360 * 60))
+    drawHand(ctx, hour, radius * 0.5, radius * 0.07, '#333')
+    // ...minute and second hands follow the same pattern
+}
+```
+
+![Analog Clock](public/images/content/project-1-clock.png)
+*Analog Clock*
 
 ##### iii. showHide Email
 
+
+
+```jsx
+const [emailVisible, setEmailVisible] = useState(false)
+ 
+if (showHideEmail) {
+    return (
+        <li className={`article-inline-list-item text-4`}
+            onClick={(e) => { if (!emailVisible) { e.preventDefault(); setEmailVisible(true) } }}>
+            <Link href={emailVisible ? itemWrapper.link?.href : null}>
+                <span>{emailVisible ? itemWrapper.label : language.getString("show_my_email")}</span>
+            </Link>
+        </li>
+    )
+}
+```
+
+![Email Hidden](public/images/content/project-1-email-hidden.png)
+*Email Hidden*
+
+![Email Shown](public/images/content/project-1-email-shown.png)
+*Email Shown*
+
 ##### iv. Random Fact Generator
+
+
 
 #### b. Public Web API Integration
 
