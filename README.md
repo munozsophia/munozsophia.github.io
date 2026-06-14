@@ -30,11 +30,29 @@ Individual Project 1 Repository: [https://github.com/munozsophia/munozsophia.git
 
 #### a. Personal Website Deployment
 
+I created my website by using a React-Bootstrap template. The About Me section includes my name and my background.
+
+![About Me Section](public/images/content/project-1-homepage.png)
+*About Me Section*
+
+![Experience Section](public/images/content/project-1-experience.png)
+*Experience Section*
+
 #### b. WAPH HTML Page
+
+I created another HTML page \(`waph.html`), which is an overview of the `Web Application Programming and Hacking` course. This page also covers current labs and hackathons in the course.
+
+![WAPH Course Link in Portfolio](public/images/content/project-1-portfolio-waph-link.png)
+*WAPH Course Link in Portfolio*
+
+![WAPH Course Page](public/images/content/project-1-portfolio-waph-page.png)
+*WAPH Course PAge*
 
 ### Task 2. Non-Technical Requirements
 
 #### a. Open-Source CSS Framework (Bootstrap)
+
+
 
 #### b. Page Tracker (Google Analytics)
 
