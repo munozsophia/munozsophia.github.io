@@ -106,7 +106,7 @@ function ArticleWeather({dataWrapper, id}) {
 							 src={`https://cdn.meteocons.com/3.0.0-next.10/svg/fill/${mapWeatherbitToMeteocons(weather.weather.icon)}.svg`}
 							 alt={weather.weather.description}/>
 						<div className={`article-weather-info`}>
-							<p className={`article-weather-location`}>{weather.city_name}, {weather.country_code}</p>
+							<p className={`article-weather-location`}>{weather.city_name}, {weather.state_code}, {weather.country_code}</p>
 							<p className={`article-weather-temp`}>{Math.round(weather.temp)}°F</p>
 							<p className={`article-weather-description`}>{weather.weather.description}</p>
 						</div>

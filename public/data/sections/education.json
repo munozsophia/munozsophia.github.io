@@ -21,5 +21,118 @@
             }
         }
     },
-    "articles": []
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/content/institution-university-cincinnati.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2022, "month": 8},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "Bachelor of {{Computer Science}}",
+                            "province": "Ohio",
+                            "country": "US",
+                            "institution": "University of Cincinnati",
+                            "text": "Actively pursuing my Bachelor's degree in Computer Science in the College of Engineering and Applied Science. Courses are theory heavy and the program is 5 years.",
+                            "list": [],
+                            "tags": [
+                                "computer science",
+                                "algorithms",
+                                "data structures",
+                                "uc rocketry"
+                            ]
+                        },
+                        "es": {
+                            "title": "Licenciatura en {{Ciencias de la Computación}}",
+                            "province": "Ohio",
+                            "country": "EE.UU.",
+                            "institution": "Universidad de Cincinnati",
+                            "text": "Cursando activamente mi licenciatura en Ciencias de la Computación en la Facultad de Ingeniería y Ciencias Aplicadas. Los cursos son de mucha teoría y el programa dura 5 años.",
+                            "list": [],
+                            "tags": [
+                                "ciencias de la computación",
+                                "algoritmos",
+                                "estructuras de datos",
+                                "uc rocketry"
+                            ]
+                        },
+                        "fr": {
+                            "title": "Licence en {{Informatique}}",
+                            "province": "Ohio",
+                            "country": "États-Unis",
+                            "institution": "Université de Cincinnati",
+                            "text": "En cours d'obtention de ma licence en Informatique au Collège d'Ingénierie et des Sciences Appliquées. Les cours sont très théoriques et le programme dure 5 ans.",
+                            "list": [],
+                            "tags": [
+                                "informatique",
+                                "algorithmes",
+                                "structures de données",
+                                "uc rocketry"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "images/content/institution-walnut-hills.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2019, "month": 8},
+                    "dateEnd": {"year": 2022, "month": 5},
+                    "locales": {
+                        "en": {
+                            "title": "High School {{Diploma with Honors}}",
+                            "province": "Ohio",
+                            "country": "US",
+                            "institution": "Walnut Hills High School",
+                            "text": "Graduated with Honors. My interest in programming began when I took AP Computer Science A and AP Computer Science Principles.",
+                            "list": [],
+                            "tags": [
+                                "swim team",
+                                "film club",
+                                "french honors society"
+                            ]
+                        },
+                        "es": {
+                            "title": "Preparatoria {{Diploma con Honores}}",
+                            "province": "Ohio",
+                            "country": "EE.UU.",
+                            "institution": "Escuela Preparatoria Walnut Hills",
+                            "text": "Me gradué con Honores. Mi interés por la programación comenzó cuando tomé AP Ciencias de la Computación A y AP Principios de Ciencias de la Computación.",
+                            "list": [],
+                            "tags": [
+                                "equipo de natación",
+                                "club de cine",
+                                "sociedad de honor francés"
+                            ]
+                        },
+                        "fr": {
+                            "title": "Lycée {{Diplôme avec Mentions}}",
+                            "province": "Ohio",
+                            "country": "États-Unis",
+                            "institution": "Lycée Walnut Hills",
+                            "text": "Diplômé avec Mentions. Mon intérêt pour la programmation a commencé lorsque j'ai suivi AP Informatique A et AP Principes de l'Informatique.",
+                            "list": [],
+                            "tags": [
+                                "équipe de natation",
+                                "club de cinéma",
+                                "société d'honneur du français"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
 }
