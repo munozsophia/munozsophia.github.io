@@ -33,7 +33,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
+                    "img": "public/images/content/logo-siemens.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2026, "month": 5},
@@ -44,17 +44,27 @@
                             "province": "Ohio",
                             "country": "US",
                             "institution": " Siemens Digital Industries Software",
-                            "text": "",
+                            "text": "Strategic Student Program | DevOps Applications",
                             "list": [],
                             "tags": [
                                 "JavaScript"
+                            ]
+                        },
+                        "es": {
+                            "list": [
+                                
+                            ]
+                        },
+                        "fr": {
+                            "list": [
+                                
                             ]
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
+                    "img": "public/images/content/logo-nasa.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2025, "month": 8},
@@ -65,15 +75,36 @@
                             "province": "Florida",
                             "country": "US",
                             "institution": "NASA Kennedy Space Center",
-                            "text": "",
-                            "list": [],
-                            "tags": []
+                            "text": "OSTEM Program | Spaceport Command and Control Software Development",
+                            "list": [
+                                "Automated Python scripts for Artemis mission support, creating scripts that log and format flight-critical system data to enhance the analysis of tests, simulations, and launches",
+                                " Integrated Jama requirements via REST API, producing structured logs for fault analysis to ensure mission safety",
+                                "Developed methodologies to roll up testing evidence from an external source into a requirements management tool that allowed for more refined feedback to evaluate the requirement’s verification state",
+                                "Worked as a team to ensure an organization’s feedback loop from testing almost 10,000 requirements was closed"
+                            ],
+                            "tags": ["Jama", "Python", "REST API"]
+                        },
+                        "es": {
+                            "list": [
+                                "Automaticé scripts en Python para el soporte de la misión Artemis, creando scripts que registran y formatean datos críticos del sistema de vuelo para mejorar el análisis de pruebas, simulaciones y lanzamientos",
+                                "Integré requisitos de Jama mediante API REST, produciendo registros estructurados para análisis de fallas y garantizar la seguridad de la misión",
+                                "Desarrollé metodologías para consolidar evidencia de pruebas desde una fuente externa en una herramienta de gestión de requisitos, permitiendo una retroalimentación más precisa para evaluar el estado de verificación de los requisitos",
+                                "Trabajé en equipo para cerrar el ciclo de retroalimentación de pruebas de casi 10,000 requisitos en una organización"
+                            ]
+                        },
+                        "fr": {
+                            "list": [
+                                "J'ai automatisé des scripts Python pour le support de la mission Artemis, créant des scripts qui enregistrent et formatert les données critiques du système de vol afin d'améliorer l'analyse des tests, simulations et lancements",
+                                "J'ai intégré les exigences Jama via l'API REST, produisant des journaux structurés pour l'analyse des pannes afin de garantir la sécurité de la mission",
+                                "J'ai développé des méthodologies pour regrouper les preuves de test d'une source externe dans un outil de gestion des exigences, permettant une rétroaction plus précise pour évaluer l'état de vérification des exigences",
+                                "J'ai travaillé en équipe pour boucler la boucle de rétroaction d'une organisation issue des tests de près de 10,000 exigences"
+                            ]
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "img": "",
+                    "img": "public/images/content/logo-chamberlain-group.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2025, "month": 1},
@@ -84,15 +115,33 @@
                             "province": "Illinois",
                             "country": "US",
                             "institution": "Chamberlain Group",
-                            "text": "",
-                            "list": [],
-                            "tags": []
+                            "text": "Intern/Co-op Program | Advanced Engineering",
+                            "list": [
+                                "Partnered with UI/UX and Industrial Design Co-ops to develop a product that facilitated the integration of advanced technology into smart homes",
+                                "Built an Android app that streamlines notifications to enhance user engagement by leveraging automated customizations and API integrations",
+                                "Presented and demonstrated product to CEO and company alongside Innovation Group with positive feedback"
+                            ],
+                            "tags": ["Kotlin", "Android Studio", "Jama"]
+                        },
+                        "es": {
+                            "list": [
+                                "Colaboré con co-ops de UI/UX y Diseño Industrial para desarrollar un producto que facilitara la integración de tecnología avanzada en hogares inteligentes",
+                                "Construí una app de Android que optimiza las notificaciones para aumentar la participación de los usuarios mediante personalizaciones automatizadas e integraciones de API",
+                                "Presenté y demostré el producto al CEO y a la empresa junto con el Grupo de Innovación, recibiendo comentarios positivos"
+                            ]
+                        },
+                        "fr": {
+                            "list": [
+                                "J'ai collaboré avec des stagiaires en UI/UX et Design Industriel pour développer un produit facilitant l'intégration de technologies avancées dans les maisons intelligentes",
+                                "J'ai construit une application Android qui rationalise les notifications pour améliorer l'engagement des utilisateurs grâce à des personnalisations automatisées et des intégrations d'API",
+                                "J'ai présenté et démontré le produit au PDG et à l'entreprise aux côtés du Groupe Innovation, avec des retours positifs"
+                            ]
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
+                    "img": "public/images/content/logo-bmw.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2024, "month": 5},
@@ -103,15 +152,33 @@
                             "province": "South Carolina",
                             "country": "US",
                             "institution": "BMW Manufacturing Co.",
-                            "text": "",
-                            "list": [],
+                            "text": "Gen>NEXT Student Program | Quality Steering",
+                            "list": [
+                                " Implemented and improved digital solutions, reduced production workers time to collect data hands-free from bluetooth calipers using AR headsets",
+                                " Increased the number of cars tested by 75% by  implementing standardized work, improving and reducing road testing by 4 minutes",
+                                "Trained global sales department associates on new features and challenges for newly released G45 car"
+                            ],
                             "tags": []
+                        },
+                        "es": {
+                            "list": [
+                                "Implementé y mejoré soluciones digitales, reduciendo el tiempo de los trabajadores de producción para recolectar datos sin uso de manos desde calibradores Bluetooth usando gafas de realidad aumentada",
+                                "Aumenté en un 75% la cantidad de autos probados mediante la implementación de trabajo estandarizado, mejorando y reduciendo las pruebas en carretera en 4 minutos",
+                                "Capacité a asociados del departamento de ventas global sobre nuevas características y desafíos del auto G45 recién lanzado"
+                            ]
+                        },
+                        "fr": {
+                            "list": [
+                                "J'ai implémenté et amélioré des solutions numériques, réduisant le temps des ouvriers de production pour collecter des données en mains libres à partir de pieds à coulisse Bluetooth en utilisant des casques de réalité augmentée",
+                                "J'ai augmenté de 75% le nombre de voitures testées en mettant en place un travail standardisé, améliorant et réduisant les essais routiers de 4 minutes",
+                                "J'ai formé les associés du service commercial mondial aux nouvelles fonctionnalités et aux défis de la voiture G45 nouvellement lancée"
+                            ]
                         }
                     }
                 },
                 {
                     "id": 5,
-                    "img": "",
+                    "img": "public/images/content/logo-bmw.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2023, "month": 8},
@@ -122,15 +189,33 @@
                             "province": "South Carolina",
                             "country": "US",
                             "institution": "BMW Manufacturing Co.",
-                            "text": "",
-                            "list": [],
-                            "tags": []
+                            "text": "Gen>NEXT Student Program | Quality Steering",
+                            "list": [
+                                "Developed a reporting tool using Oracle APEX that improved audits, providing information in a timely manner that allowed for effective structured discussions to take place",
+                                "Responsible for delivering weekly reports that analyzed the data of current quality issues that helped management take necessary steps to resolve the issues",
+                                "Supported colleagues and Quality Steering team by automating reports that improved work delivery"
+                            ],
+                            "tags": ["Oracle APEX"]
+                        },
+                        "es": {
+                            "list": [
+                                "Desarrollé una herramienta de informes usando Oracle APEX que mejoró las auditorías, proporcionando información oportuna para facilitar discusiones estructuradas efectivas",
+                                "Fui responsable de entregar informes semanales que analizaban los datos de problemas de calidad actuales, ayudando a la gerencia a tomar las medidas necesarias para resolverlos",
+                                "Apoyé a colegas y al equipo de Quality Steering automatizando informes que mejoraron la entrega de trabajo"
+                            ]
+                        },
+                        "fr": {
+                            "list": [
+                                "J'ai développé un outil de reporting utilisant Oracle APEX qui a amélioré les audits, fournissant des informations en temps opportun pour permettre des discussions structurées efficaces",
+                                "J'étais responsable de la livraison de rapports hebdomadaires qui analysaient les données des problèmes de qualité actuels, aidant la direction à prendre les mesures nécessaires pour résoudre les problèmes",
+                                "J'ai soutenu mes collègues et l'équipe de pilotage de la qualité en automatisant les rapports, ce qui a amélioré la livraison du travail"
+                            ]
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "img": "",
+                    "img": "public/images/content/logo-p&g.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2022, "month": 6},
@@ -141,9 +226,27 @@
                             "province": "Ohio",
                             "country": "US",
                             "institution": "Procter & Gamble",
-                            "text": "",
-                            "list": [],
-                            "tags": []
+                            "text": "Careers in Business and STEM Initiative Program | IT North America Program Management",
+                            "list": [
+                                "Executed a plan and created a framework to initiate the transition of a program to Jira software that facilitates the activation tracking of a program with retailer",
+                                "Delivered data analysis of images provided from surveys that determined whether the project was feasible and created a formula based on the data analysis that included recommendations",
+                                "Wrote the first issue of a program newsletter and devised a process that specifies the necessary steps to obtain information for future issues"
+                            ],
+                            "tags": ["Jira"]
+                        },
+                        "es": {
+                            "list": [
+                                "Ejecuté un plan y creé un marco de trabajo para iniciar la transición de un programa a Jira, facilitando el seguimiento de activación de un programa con el minorista",
+                                "Realicé análisis de datos de imágenes proporcionadas por encuestas para determinar la viabilidad del proyecto y creé una fórmula basada en el análisis de datos que incluía recomendaciones",
+                                "Escribí la primera edición de un boletín del programa y diseñé un proceso que especifica los pasos necesarios para obtener información para ediciones futuras"
+                            ]
+                        },
+                        "fr": {
+                            "list": [
+                                "J'ai exécuté un plan et créé un cadre pour initier la transition d'un programme vers Jira, facilitant ainsi le suivi de l'activation d'un programme avec un détaillant",
+                                "J'ai livré une analyse des données d'images provenant d'enquêtes pour déterminer la faisabilité du projet et créé une formule basée sur l'analyse des données incluant des recommandations",
+                                "J'ai rédigé le premier numéro d'une newsletter de programme et conçu un processus spécifiant les étapes nécessaires pour obtenir des informations pour les numéros futurs"
+                            ]
                         }
                     }
                 }

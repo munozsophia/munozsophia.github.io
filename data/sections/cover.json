@@ -40,8 +40,8 @@
                 },
                 {
                     "id": 2,
-                    "label": "munozsa@mail.uc.edu",
-                    "link": {"href": "mailto:munozsa@mail.uc.edu", "tooltipString": "email_me"},
+                    "label": "smunnoz22@gmail.com",
+                    "link": {"href": "mailto:smunnoz22@gmail.com", "tooltipString": "email_me"},
                     "faIcon": "fa-regular fa-envelope"  
                 },
                 {
@@ -212,6 +212,16 @@
         },
         {
             "id": 4,
+            "component": "ArticleJoke",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": []
+        },
+        {
+            "id": 5,
             "component": "ArticleSkills",
             "locales": {
                 "en": {"title": "{{Languages}} I Speak"},
@@ -306,8 +316,8 @@
             ]
         },
         {
-            "id": 5,
-            "component": "ArticleJoke",
+            "id": 6,
+            "component": "ArticleFactGenerator",
             "locales": {},
             "settings": {
                 "order_items_by": "id",

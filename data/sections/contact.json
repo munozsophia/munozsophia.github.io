@@ -23,6 +23,88 @@
     "articles": [
         {
             "id": 1,
+            "component": "ArticleContactForm",
+            "settings": {
+                "email_js_public_key": "WBM1K_j06an80GkMH",
+                "email_js_service_id": "service_58j2b44",
+                "email_js_template_id": "template_reccayg"
+            },
+            "locales": {
+                "en": {
+                    "contact_thank_you_title": "{{Thanks}} for the contact!",
+                    "contact_thank_you_body": "Your message has been received, and I'll be reaching out to you soon. I appreciate your time and look forward to connecting with you!",
+                    "contact_thank_you_footer": "The reply will be sent to your email address: {{$email}}",
+                    "title": "Send Me a {{Message}}"
+                },
+                "es": {
+                    "contact_thank_you_title": "¡{{Gracias}} por contactarme!",
+                    "contact_thank_you_body": "Tu mensaje ha sido recibido y me pondré en contacto contigo pronto. Agradezco tu tiempo y espero conectar contigo.",
+                    "contact_thank_you_footer": "La respuesta se enviará a tu correo electrónico: {{$email}}",
+                    "title": "Envíame un {{Mensaje}}"
+                },
+                "fr": {
+                    "contact_thank_you_title": "{{Merci}} pour votre message!",
+                    "contact_thank_you_body": "Votre message a bien été reçu et je vous répondrai sous peu. Je vous remercie de votre temps et me réjouis d'échanger avec vous !",
+                    "contact_thank_you_footer": "La réponse sera envoyée à votre adresse e-mail : {{$email}}",
+                    "title": "Envoyez-moi un {{Message}}"
+                }
+            },
+            "items": null
+        },
+        {
+            "id": 2,
+            "component": "ArticleInfoList",
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "locales": {
+                "en": {"title": "Or If You {{Prefer}}..."},
+                "es": {"title": "O Si {{Prefieres}}..."},
+                "fr": {"title": "Ou Si Vous {{Préférez}}..."}
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-phone",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "label": "+1 (513) 773-7003",
+                    "link": {"href": "tel:15137737003", "tooltipString": "call_me"},
+                    "copyToClipboardButton": true,
+                    "locales": {
+                        "en": {"title": "Phone"},
+                        "es": {"title": "Teléfono"},
+                        "fr": {"title": "Téléphone"}
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-envelope",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "label": "smunnoz22@gmail.com",
+                    "link": {"href": "mailto:smunnoz22@gmail.com", "tooltipString": "email_me"},
+                    "copyToClipboardButton": true,
+                    "locales": {
+                        "en": {"title": "E-Mail"},
+                        "es": {"title": "Correo electrónico"},
+                        "fr": {"title": "E-Mail"}
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-brands fa-linkedin",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "label": "@sophia-mnz",
+                    "link": {"href": "https://www.linkedin.com/in/sophia-mnz/", "tooltipString": "open_website"},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {"title": "LinkedIn"}
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
             "component": "ArticleClock",
             "locales": {},
             "settings": {

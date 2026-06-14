@@ -1,7 +1,7 @@
 {
     "name": "Sophia Munoz",
     "profilePictureUrl": "images/content/pfp.jpg",
-    "resumePdfUrl": "public/pdf/resume.pdf",
+    "resumePdfUrl": "/pdf/resume.pdf",
     "statusCircleVisible": true,
     "statusCircleVariant": "available",
     "statusCircleHoverMessage": "status_message_available_for_freelance",
