@@ -21,5 +21,53 @@
             }
         }
     },
-    "articles": []
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "title": ""
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {"bg": "#02343F", "fill": "#F0EDCC"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/munozsophia/waph-munozsa/tree/main", "tooltipString": "open_website", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://munozsophia.github.io/waph.html", "tooltipString": "open_website", "faIcon": "fa-regular fa-window-restore"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "WAPH Course Overview",
+                            "text": "An [[HTML page]] that goes overviews the course and projects of Web Application Programming and Hacking.",
+                            "tags": ["Course", "HTML"]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleWeather",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": []
+        }
+    ]
 }

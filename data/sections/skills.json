@@ -21,5 +21,235 @@
             }
         }
     },
-    "articles": []
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleStack",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-python",
+                    "faIconColors": {"fill": "#306998"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Python"
+                        }
+                    }
+                },
+
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-brands fa-java",
+                    "faIconColors": {"fill": "#0295c2"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Java"
+                        }
+                    }
+                },
+
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-brands fa-js-square",
+                    "faIconColors": {"fill": "#f7df1e", "fillLight": "a68732"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "JavaScript"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-brands fa-css3-alt",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "#264de4", "fillLight": ""},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "CSS3"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-brands fa-bootstrap",
+                    "faIconColors": {"fill": "#7952B3"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Bootstrap"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "fa-brands fa-git-alt",
+                    "faIconColors": {"fill": "#F1502F"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Git"
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "img": "",
+                    "faIcon": "fa-brands fa-github",
+                    "faIconColors": {"fill": "#FFFFFF", "fillLight": "#24292E"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Github"
+                        }
+                    }
+                },
+                {
+                    "id": 8,
+                    "img": "",
+                    "faIcon": "fa-brands fa-html5",
+                    "faIconColors": {"fill": "#F06529", "fillLight": ""},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "HTML5"
+                        }
+                    }
+                },
+                {
+                    "id": 9,
+                    "img": "",
+                    "faIcon": "fa-brands fa-jenkins",
+                    "faIconColors": {"fill": "#FFFFFF", "fillLight": "#000000"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Jenkins"
+                        }
+                    }
+                },
+                {
+                    "id": 10,
+                    "img": "",
+                    "faIcon": "fa-brands fa-jira",
+                    "faIconColors": {"fill": "#0052CC"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Jira"
+                        }
+                    }
+                },
+                {
+                    "id": 11,
+                    "img": "",
+                    "faIcon": "fa-brands fa-linux",
+                    "faIconColors": {"fill": "#ffc925"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Linux"
+                        }
+                    }
+                },
+                {
+                    "id": 12,
+                    "img": "",
+                    "faIcon": "fa-brands fa-npm",
+                    "faIconColors": {"fill": "#CB3837"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "npm"
+                        }
+                    }
+                },
+                {
+                    "id": 13,
+                    "img": "",
+                    "faIcon": "fa-brands fa-php",
+                    "faIconColors": {"fill": "#777BB3"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "PHP"
+                        }
+                    }
+                },
+                {
+                    "id": 14,
+                    "img": "",
+                    "faIcon": "fa-brands fa-react",
+                    "faIconColors": {"fill": "#61DBFB"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "React"
+                        }
+                    }
+                },
+                {
+                    "id": 15,
+                    "img": "",
+                    "faIcon": "fa-brands fa-redhat",
+                    "faIconColors": {"fill": "#EE0000"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "RedHat"
+                        }
+                    }
+                },
+                {
+                    "id": 16,
+                    "img": "",
+                    "faIcon": "fa-brands fa-ubuntu",
+                    "faIconColors": {"fill": "#E95420"},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "Ubuntu"
+                        }
+                    }
+                },
+                {
+                    "id": 17,
+                    "img": "images/svg/logo-cpp.svg",
+                    "faIcon": "",
+                    "faIconColors": {"fill": "", "fillLight": ""},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "C++"
+                        }
+                    }
+                },
+                {
+                    "id": 18,
+                    "img": "images/svg/logo-c.svg",
+                    "faIcon": "",
+                    "faIconColors": {"fill": "", "fillLight": ""},
+                    "date": {"year": null, "month": null},
+                    "locales": {
+                        "en": {
+                            "title": "C"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
 }

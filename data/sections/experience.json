@@ -21,5 +21,133 @@
             }
         }
     },
-    "articles": []
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2026, "month": 5},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "Software Development Co-op",
+                            "province": "Ohio",
+                            "country": "US",
+                            "institution": " Siemens Digital Industries Software",
+                            "text": "",
+                            "list": [],
+                            "tags": [
+                                "JavaScript"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2025, "month": 8},
+                    "dateEnd": {"year": 2025, "month": 12},
+                    "locales": {
+                        "en": {
+                            "title": "Software Engineer Intern",
+                            "province": "Florida",
+                            "country": "US",
+                            "institution": "NASA Kennedy Space Center",
+                            "text": "",
+                            "list": [],
+                            "tags": []
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2025, "month": 1},
+                    "dateEnd": {"year": 2025, "month": 4},
+                    "locales": {
+                        "en": {
+                            "title": "Computer Science Co-op",
+                            "province": "Illinois",
+                            "country": "US",
+                            "institution": "Chamberlain Group",
+                            "text": "",
+                            "list": [],
+                            "tags": []
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2024, "month": 5},
+                    "dateEnd": {"year": 2024, "month": 8},
+                    "locales": {
+                        "en": {
+                            "title": "Launch & Series Quality Steering Co-op",
+                            "province": "South Carolina",
+                            "country": "US",
+                            "institution": "BMW Manufacturing Co.",
+                            "text": "",
+                            "list": [],
+                            "tags": []
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2023, "month": 8},
+                    "dateEnd": {"year": 2023, "month": 12},
+                    "locales": {
+                        "en": {
+                            "title": "Quality Steering Co-op",
+                            "province": "South Carolina",
+                            "country": "US",
+                            "institution": "BMW Manufacturing Co.",
+                            "text": "",
+                            "list": [],
+                            "tags": []
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
+                    "dateStart": {"year": 2022, "month": 6},
+                    "dateEnd": {"year": 2022, "month": 8},
+                    "locales": {
+                        "en": {
+                            "title": "IT Project Management Intern",
+                            "province": "Ohio",
+                            "country": "US",
+                            "institution": "Procter & Gamble",
+                            "text": "",
+                            "list": [],
+                            "tags": []
+                        }
+                    }
+                }
+            ]
+        }
+    ]
 }
