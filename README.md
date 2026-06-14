@@ -8,6 +8,52 @@
 
 **Email**: [mailto:munozsa@mail.uc.edu](munozsa@mail.uc.edu)
 
-![Sophia's headshot](public/images/content/pfp.jpg)
+![Sophia's headshot](../images/content/pfp.jpg)
 
-# Individual Project 1 - Front-end Web Development with a Professional Profile Website and API Integration on github.io Cloud Service
+# Individual Project 1 - Professional Profile Website and API Integration on github.io Cloud Service
+
+## The Project's Overview
+
+For Individual Project 1 there were three tasks. Task 1 has two parts. In Part `a`, I create and deployed a personal website using GitHub Pages, as in the GitHub Cloud. This website includes information about me, including background. In Part `b`, I created a link to a new HTML page \(`waph.html`) with the course overview and current projects.
+
+Task 2 has two parts. In Part `a` I used React, Bootstrap, and Vite. I used an existing template to guide me in the implementation of my website. In Part `b` I integrated the google analytics page tracker into my `index.html` file to track user patterns.
+
+Task 3 has three parts. In Part `a` I used jQuery and React to implement JavaScript code. This included a digital clock, analog clock, show/hide email function, and fact generator. In Part `b` I integrated two public Web APIs: jokeAPI \(every minute) and Weatherbit.io. In Part `c` I implemented JavaScript cookies to track users and welcome them with a notification.
+
+Outcomes I learned from this project were the implentations of third-party APIs \(JokeAPI, Weatherbit.io, Useless Facts API) in React. I also made sure to keep security in mind by using env variables for API keys. I also learned about managing rate limits \(especially for Weatherbit.io). I also learned how to add new components to integrate my functions into the webpage.
+
+Portfolio Website:[https://munozsophia.github.io](https://munozsophia.github.io)
+
+Individual Project 1 Repository: [https://github.com/munozsophia/munozsophia.github.io](https://github.com/munozsophia/munozsophia.github.io)
+
+### Task 1. General Requirements
+
+#### a. Personal Website Deployment
+
+#### b. WAPH HTML Page
+
+### Task 2. Non-Technical Requirements
+
+#### a. Open-Source CSS Framework (Bootstrap)
+
+#### b. Page Tracker (Google Analytics)
+
+### Task 3. Technical Requirements
+
+#### a. Basic JavaScript Code (jQuery and React)
+
+##### i. Digital Clock
+
+##### ii. Analog Clock
+
+##### iii. showHide Email
+
+##### iv. Random Fact Generator
+
+#### b. Public Web API Integration
+
+##### i. JokeAPI Integration
+
+##### ii. Weatherbit API Integration
+
+#### c. JavaScript Cookies
