@@ -64,7 +64,7 @@
                 },
                 {
                     "id": 2,
-                    "img": "public/images/content/logo-nasa.png",
+                    "img": "/images/content/logo-nasa.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2025, "month": 8},
@@ -104,7 +104,7 @@
                 },
                 {
                     "id": 3,
-                    "img": "public/images/content/logo-chamberlain-group.png",
+                    "img": "/images/content/logo-chamberlain-group.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2025, "month": 1},
@@ -141,7 +141,7 @@
                 },
                 {
                     "id": 4,
-                    "img": "public/images/content/logo-bmw.png",
+                    "img": "/images/content/logo-bmw.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2024, "month": 5},
@@ -178,7 +178,7 @@
                 },
                 {
                     "id": 5,
-                    "img": "public/images/content/logo-bmw.png",
+                    "img": "/images/content/logo-bmw.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2023, "month": 8},
@@ -215,7 +215,7 @@
                 },
                 {
                     "id": 6,
-                    "img": "public/images/content/logo-p&g.png",
+                    "img": "/images/content/logo-p&g.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2022, "month": 6},
