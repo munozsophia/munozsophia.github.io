@@ -46,15 +46,31 @@ I created another HTML page \(`waph.html`), which is an overview of the `Web App
 *WAPH Course Link in Portfolio*
 
 ![WAPH Course Page](public/images/content/project-1-portfolio-waph-page.png)
-*WAPH Course PAge*
+*WAPH Course Page*
 
 ### Task 2. Non-Technical Requirements
 
 #### a. Open-Source CSS Framework (Bootstrap)
 
-
+As for the implementation of the template, the website is built using a React template. This template uses Bootstrap 5 for the layout and component styling. This framework was a great guide to implmenting my portfolio as professional and informative.
 
 #### b. Page Tracker (Google Analytics)
+
+I decided to integrate the page tracker using Google Analytics. The documentation had me paste the code below into the `index.html` file. Since Google Analytics doesn't provide a way to implement images withing a website I shared my Realtime Dashboard from Google Analytics of my website visits.
+
+```html
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMX396Z1QJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QMX396Z1QJ');
+</script>
+```
+
+![Google Analytics Realtime Dashboard](public/images/content/project-1-google-analytics.png)
+*Google Analytics Realtime Dashboard*
 
 ### Task 3. Technical Requirements
 
