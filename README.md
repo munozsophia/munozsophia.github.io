@@ -200,6 +200,8 @@ useEffect(() => {
 
 ##### ii. Weatherbit API Integration
 
+For the Weatherbit API integration, its implementation was successful. I created a `ArticleWeather` component to implement the Current Weather API but I reached the rate limit of the API so I can't currently display the image. I also used Meteocons, which are animated graphics that I mapped to Weatherbit. Also since I used a generated Master API Key I took security measures to keep the API Key unexposed to the public repo. I stored it in an `.env`.
+
 ```jsx
 const fetchWeather = (lat, lon) => {
     fetch(`https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=${apiKey}&units=I`)
@@ -219,3 +221,34 @@ const fetchWeather = (lat, lon) => {
 *Web Weatherbit.io Integration*
 
 #### c. JavaScript Cookies
+
+As for the JavaScript cookie implementation, I created a handler, `WelcomeCookieHandler` component that uses `document.cookie` to check if there is a `lastVisit=` cookie that already exists.
+
+```jsx
+if (document.cookie.indexOf("lastVisit") < 0) {
+    displayNotification(
+        language.getString("welcome"),
+        language.getString("welcome_first_time"),
+        "default"
+    )
+} else {
+    const lastVisit = document.cookie
+        .split('; ')
+        .find(row => row.startsWith('lastVisit='))
+        ?.split('=')[1]
+ 
+    displayNotification(
+        language.getString("welcome"),
+        language.getString("welcome_back").replace("{date}", decodeURIComponent(lastVisit)),
+        "default"
+    )
+}
+ 
+document.cookie = `lastVisit=${encodeURIComponent(now)}; path=/; max-age=31536000`
+```
+
+![First Visit Cookie Message](public/images/content/project-1-cookie-first.png)
+*First Visit Cookie Message*
+
+![Returning Visit Cookie Message](public/images/content/project-1-cookie-return.png)
+*Returning Visit Cookie Message*
