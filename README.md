@@ -124,7 +124,7 @@ const drawTime = (ctx, radius) => {
 
 ##### iii. showHide Email
 
-I implemented the showHide email function with an onClick as an inline element in `ArticleInlineList`. To do this I updated the component to add the functionality if the element has an `fa-email` icon and is located in the `cover.json` section \(About Me). I thins case I used the React states to achieve this part.
+I implemented the showHide email function with an onClick as an inline element in `ArticleInlineList`. To do this I updated the component to add the functionality if the element has an `fa-email` icon and is located in the `cover.json` section \(About Me). In this case I used the React states to achieve this part.
 
 ```jsx
 const [emailVisible, setEmailVisible] = useState(false)
