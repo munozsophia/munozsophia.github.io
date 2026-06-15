@@ -200,7 +200,15 @@ useEffect(() => {
 
 ##### ii. Weatherbit API Integration
 
-For the Weatherbit API integration, its implementation was successful. I created a `ArticleWeather` component to implement the Current Weather API but I reached the rate limit of the API so I can't currently display the image. I also used Meteocons, which are animated graphics that I mapped to Weatherbit. Also since I used a generated Master API Key I took security measures to keep the API Key unexposed to the public repo. I stored it in an `.env`.
+For the Weatherbit API integration, its implementation was successful. I created a `ArticleWeather` component to implement the Current Weather API. I ran into an issue where I eventually could not display the image but I figured out that I had to fix a deployment pipeline isse and now it works. I just have to make sure to deploy with this workflow from now on.
+
+- npm run build
+- npm run deploy
+- git add .
+- git commit -m "update"
+- git push
+
+I also used Meteocons, which are animated graphics that I mapped to Weatherbit. Also since I used a generated Master API Key I took security measures to keep the API Key unexposed to the public repo. I stored it in an `.env`.
 
 ```jsx
 const fetchWeather = (lat, lon) => {
