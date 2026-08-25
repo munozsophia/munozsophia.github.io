@@ -22,7 +22,7 @@ Task 3 has three parts. In Part `a` I used jQuery and React to implement JavaScr
 
 Outcomes I learned from this project were the implentations of third-party APIs \(JokeAPI, Weatherbit.io, Useless Facts API) in React. I also made sure to keep security in mind by using env variables for API keys. I also learned about managing rate limits \(especially for Weatherbit.io). I also learned how to add new components to integrate my functions into the webpage.
 
-Portfolio Website:[https://munozsophia.github.io](https://munozsophia.github.io)
+Portfolio Website: [https://munozsophia.github.io](https://munozsophia.github.io)
 
 Individual Project 1 Repository: [https://github.com/munozsophia/munozsophia.github.io](https://github.com/munozsophia/munozsophia.github.io)
 
