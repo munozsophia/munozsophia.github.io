@@ -66,24 +66,9 @@
                             "tags": ["Cours", "HTML"]
                         }
                     }
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "component": "ArticlePortfolio",
-            "locales": {
-                "en": {
-                    "title": ""
-                }
-            },
-            "settings": {
-                "order_items_by": "id",
-                "order_items_sort": "asc"
-            },
-            "items": [
+                },
                 {
-                    "id": 1,
+                    "id": 2,
                     "img": "",
                     "faIcon": "fa-solid fa-cube",
                     "faIconColors": {"bg": "#02343F", "fill": "#F0EDCC"},
