@@ -1,0 +1,109 @@
+/**
+ * Stylesheet for standalone static content pages (waph.html,
+ * computer-graphics.html) that live outside the React app.
+ *
+ * This imports the SAME real partials app.scss uses for theme
+ * colors, typography, and page layout - no duplicated/copied CSS.
+ * Skips the Bootstrap component library, FontAwesome, PrimeIcons,
+ * and Swiper since these plain content pages don't use them.
+ */
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+
+@import 'constants';
+@import 'themes/variables-theme-dark';
+@import 'root-flags';
+@import 'layout/typography';
+@import 'layout/page';
+
+body {
+    /* layout/_page.scss sets position:fixed + overflow-y:hidden on larger
+       screens because the React app manages its own internal scroll
+       container. These plain content pages don't have one, so restore
+       normal page scrolling here. */
+    position: static !important;
+    overflow-y: auto !important;
+}
+
+body {
+    font-family: $font-family-base;
+    margin: 0;
+    padding: 60px 1rem;
+    color: var(--theme-texts);
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+}
+
+.container.wrapper {
+    width: 100%;
+    max-width: 760px;
+}
+
+#top {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        font-family: $font-family-base;
+        font-weight: 400;
+        color: var(--theme-muted);
+        margin: 0.25rem 0;
+    }
+}
+
+#main {
+    background-color: var(--theme-card-background);
+    border: 1px solid var(--theme-standard-borders);
+    border-radius: $standard-border-radius;
+    padding: 2.5rem;
+
+    h3 {
+        color: var(--theme-primary);
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    h4 {
+        font-family: $font-family-base;
+        font-weight: 700;
+        color: var(--theme-texts);
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: var(--theme-texts);
+        margin: 0.5rem 0 1rem;
+    }
+
+    a {
+        color: var(--theme-links);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--theme-links-hover);
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: $standard-border-radius;
+        border: 1px solid var(--theme-standard-borders);
+        margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+}

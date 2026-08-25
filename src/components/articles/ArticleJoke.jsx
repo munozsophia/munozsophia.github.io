@@ -14,7 +14,7 @@ function ArticleJoke({dataWrapper, id}) {
 	const [joke, setJoke] = useState(null)
 
 	const fetchJoke = () => {
-		$.get("https://v2.jokeapi.dev/joke/Any?type=single",
+		$.get("https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single",
 			function(result) {
 				console.log("From jokeAPI: " + JSON.stringify(result))
 				if (!result || !result.joke) return

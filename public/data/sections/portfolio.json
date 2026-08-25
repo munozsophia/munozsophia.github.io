@@ -51,18 +51,18 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "WAPH Course Overview",
-                            "text": "An [[HTML page]] that goes overviews the course and projects of Web Application Programming and Hacking.",
+                            "title": "Web Application Programming and Hacking",
+                            "text": "An [[overview page]] that goes overviews the course and projects of Web Application Programming and Hacking.",
                             "tags": ["Course", "HTML"]
                         },
                         "es": {
                             "title": "Descripción General del Curso WAPH",
-                            "text": "Una [[página HTML]] que ofrece una visión general del curso y los proyectos de Programación y Hacking de Aplicaciones Web.",
+                            "text": "Una [[página de resumen]] que ofrece una visión general del curso y los proyectos de Programación y Hacking de Aplicaciones Web.",
                             "tags": ["Curso", "HTML"]
                         },
                         "fr": {
                             "title": "Aperçu du cours WAPH",
-                            "text": "Une [[page HTML]] qui donne un aperçu du cours et des projets de Programmation et de Hacking d'Applications Web.",
+                            "text": "Une [[page de présentation]] qui donne un aperçu du cours et des projets de Programmation et de Hacking d'Applications Web.",
                             "tags": ["Cours", "HTML"]
                         }
                     }
@@ -71,6 +71,53 @@
         },
         {
             "id": 2,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "title": ""
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-cube",
+                    "faIconColors": {"bg": "#02343F", "fill": "#F0EDCC"},
+                    "preview": {
+                        "links": [
+                            {"href": "", "tooltipString": "open_website", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://munozsophia.github.io/computer-graphics.html", "tooltipString": "open_website", "faIcon": "fa-regular fa-window-restore"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Computer Graphics I",
+                            "text": "An [[overview page]] documenting the projects and assignments completed for Computer Graphics I, including source code and demos.",
+                            "tags": ["Course", "HTML", "JavaScript", "WebGL"]
+                        },
+                        "es": {
+                            "title": "Gráficos por Computadora I",
+                            "text": "Una [[página de resumen]] que documenta los proyectos y tareas realizados para Gráficos por Computadora I, incluyendo el código fuente y demostraciones.",
+                            "tags": ["Curso", "HTML", "JavaScript", "WebGL"]
+                        },
+                        "fr": {
+                            "title": "Infographie I",
+                            "text": "Une [[page de présentation]] documentant les projets et devoirs réalisés pour Infographie I, y compris le code source et les démonstrations.",
+                            "tags": ["Cours", "HTML", "JavaScript", "WebGL"]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
             "component": "ArticleWeather",
             "locales": {},
             "settings": {

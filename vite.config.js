@@ -7,6 +7,11 @@ export default defineConfig({
     plugins: [react()],
     build: {
         rollupOptions: {
+            input: {
+                main: 'index.html',
+                waph: 'waph.html',
+                computerGraphics: 'computer-graphics.html',
+            },
             output: {
                 manualChunks(id) {
                     if (id.includes('node_modules')) {

@@ -24,6 +24,8 @@ jobs:
       # Build the project
       - name: Build project
         run: npm run build
+        env:
+          VITE_WEATHERBIT_API_KEY: ${{ secrets.VITE_WEATHERBIT_API_KEY }}
       # Deploy to GitHub pages
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v4

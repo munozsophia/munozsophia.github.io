@@ -37,7 +37,7 @@
                     "faIcon": "",
                     "faIconColors": {"bg": "", "bgLight": "", "fill": "", "fillLight": ""},
                     "dateStart": {"year": 2026, "month": 5},
-                    "dateEnd": {"now": true},
+                    "dateEnd": {"year": 2026, "month": 8},
                     "locales": {
                         "en": {
                             "title": "Software Development Co-op",
@@ -45,19 +45,25 @@
                             "country": "US",
                             "institution": " Siemens Digital Industries Software",
                             "text": "Strategic Student Program | DevOps Applications",
-                            "list": [],
-                            "tags": [
-                                "JavaScript"
-                            ]
+                            "list": [
+                                "Created secondary environment URL support for Cucumber test framework, so tests can switch between primary and secondary Active Workspace instances for navigation and login validation",
+                                "Enhanced web app’s Step Usage Report with a “Download Rerun” function, providing precise Cucumber text files for efficient, scenario-specific test runs",
+                                "Built a Teamcenter workflow-template generation and validation pipeline in TypeScript, converting natural-language requests into import-ready XML with prompt-fidelity checks and successful Teamcenter round-trip verification"
+                            ],
+                            "tags": ["JavaScript", "MongoDB", "GraphQL", "TypeScript", "Cucumber"]
                         },
                         "es": {
                             "list": [
-                                
+                                "Desarrollé soporte para URLs de entorno secundario en el framework de pruebas Cucumber, permitiendo que las pruebas alternen entre instancias primaria y secundaria de Active Workspace para la validación de navegación e inicio de sesión",
+                                "Mejoré el Reporte de Uso de Pasos (Step Usage Report) de la aplicación web con una función de “Descargar Reejecución”, que genera archivos de texto Cucumber precisos para ejecutar pruebas específicas de cada escenario de manera eficiente",
+                                "Construí un pipeline en TypeScript para la generación y validación de plantillas de flujo de trabajo de Teamcenter, que convierte solicitudes en lenguaje natural a XML listo para importar, con verificaciones de fidelidad de los prompts y validación exitosa de ida y vuelta en Teamcenter"
                             ]
                         },
                         "fr": {
                             "list": [
-                                
+                                "Développement d'un support d'URL d'environnement secondaire pour le framework de test Cucumber, permettant aux tests de basculer entre les instances primaire et secondaire d'Active Workspace pour la validation de la navigation et de la connexion",
+                                "Amélioration du rapport d'utilisation des étapes (Step Usage Report) de l'application web avec une fonction « Télécharger la ré-exécution », fournissant des fichiers texte Cucumber précis pour des exécutions de tests efficaces et spécifiques à chaque scénario",
+                                "Création d'un pipeline en TypeScript pour la génération et la validation de modèles de workflow Teamcenter, convertissant des requêtes en langage naturel en XML prêt à être importé, avec des vérifications de fidélité des invites et une validation aller-retour réussie dans Teamcenter"
                             ]
                         }
                     }
