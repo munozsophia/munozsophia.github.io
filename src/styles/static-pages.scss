@@ -18,6 +18,13 @@
 @import 'layout/typography';
 @import 'layout/page';
 
+// Icon fonts - only solid + brands (used for GitHub icon), skip regular
+// and the fa-* base/shared styles that pull in the full icon set.
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+
 body {
     /* layout/_page.scss sets position:fixed + overflow-y:hidden on larger
        screens because the React app manages its own internal scroll
@@ -40,14 +47,38 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $headings-font-family;
 }
 
-.container.wrapper {
+.static-page-container {
+    /* Bootstrap's _reboot.scss normally sets box-sizing:border-box
+       globally, but we skip importing full Bootstrap on these pages.
+       Without it, .article-portfolio-item's width:100% + padding
+       renders WIDER than its grid column (content-box sizing adds
+       padding on top of the 100% width instead of inside it), eating
+       into the grid gap and making cards look like they're touching. */
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
     width: 100%;
-    max-width: 760px;
+    max-width: 980px;
+
+    /* The real ArticlePortfolio.scss grid stretches every card in a row to
+       match the tallest one (default CSS grid align-items: stretch). That's
+       fine when card content is roughly equal length, but these pages have
+       lab/project entries with very different text lengths, so stretching
+       creates large empty gaps in shorter cards. Scoped here only, so the
+       actual portfolio section elsewhere on the site is unaffected. */
+    .article-portfolio-items {
+        align-items: start;
+    }
+
+    .article-portfolio-item {
+        height: auto;
+    }
 }
 
-#top {
+.static-page-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 
     h1 {
         margin-bottom: 0.5rem;
@@ -59,51 +90,10 @@ h1, h2, h3, h4, h5, h6 {
         color: var(--theme-muted);
         margin: 0.25rem 0;
     }
-}
 
-#main {
-    background-color: var(--theme-card-background);
-    border: 1px solid var(--theme-standard-borders);
-    border-radius: $standard-border-radius;
-    padding: 2.5rem;
-
-    h3 {
-        color: var(--theme-primary);
-        margin-top: 2rem;
-        margin-bottom: 0.75rem;
-
-        &:first-of-type {
-            margin-top: 0;
-        }
-    }
-
-    h4 {
-        font-family: $font-family-base;
-        font-weight: 700;
+    .static-page-header-description {
         color: var(--theme-texts);
-        margin-top: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        color: var(--theme-texts);
-        margin: 0.5rem 0 1rem;
-    }
-
-    a {
-        color: var(--theme-links);
-        text-decoration: none;
-
-        &:hover {
-            color: var(--theme-links-hover);
-            text-decoration: underline;
-        }
-    }
-
-    img {
-        max-width: 100%;
-        border-radius: $standard-border-radius;
-        border: 1px solid var(--theme-standard-borders);
-        margin: 0.5rem 0.5rem 0.5rem 0;
+        max-width: 640px;
+        margin: 1.25rem auto 0;
     }
 }

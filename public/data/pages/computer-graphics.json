@@ -1,0 +1,24 @@
+{
+    "course": {
+        "title": "Computer Graphics I",
+        "instructor": "Dr. Jillian Aurisano",
+        "student": "Sophia Munoz",
+        "description": "Documenting the projects and assignments completed for Computer Graphics I, including goals, process, results, and demos for each project."
+    },
+    "projects": [
+        {
+            "id": 1,
+            "faIcon": "fa-solid fa-cube",
+            "title": "Project 1",
+            "tags": ["JavaScript", "WebGL"],
+            "summary": "Brief one-line summary of what this project is about.",
+            "goals": "What this project set out to accomplish.",
+            "process": "The approach and steps taken to build it.",
+            "result": "The outcome, and anything learned along the way.",
+            "sketches": [],
+            "screenshots": [],
+            "githubUrl": "",
+            "videoEmbedUrl": ""
+        }
+    ]
+}

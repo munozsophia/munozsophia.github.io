@@ -1,0 +1,126 @@
+/**
+ * Styling for ExpandableCard - extends the real article-portfolio-item
+ * card (from ArticlePortfolio.scss) with expand/collapse behavior.
+ */
+
+.back-to-portfolio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--theme-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+        color: var(--theme-primary);
+    }
+}
+
+.expandable-card {
+    /* When expanded, span the full grid row instead of squeezing next
+       to a neighboring card - long content shouldn't fight for half-width. */
+    &.expanded {
+        grid-column: 1 / -1;
+    }
+
+    padding-bottom: 60px !important;
+}
+
+.expandable-card-details {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--theme-standard-borders);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h6 {
+        color: var(--theme-primary);
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: var(--theme-texts-light-1);
+        margin: 0;
+    }
+
+    .expandable-card-image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 10px;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--theme-standard-borders);
+        }
+    }
+
+    .expandable-card-video {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        border-radius: 8px;
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+
+    .expandable-card-links {
+        display: flex;
+        gap: 12px;
+
+        a {
+            color: var(--theme-links);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+
+            &:hover {
+                color: var(--theme-links-hover);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.expandable-card-toggle {
+    position: absolute;
+    bottom: 16px;
+    left: 25px;
+    right: 25px;
+
+    background: none;
+    border: none;
+    color: var(--theme-primary);
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &:hover {
+        color: var(--theme-links-hover);
+    }
+}
+
+.expandable-card-chevron {
+    transition: transform 0.2s ease;
+}
+
+.expandable-card.expanded .expandable-card-chevron {
+    transform: rotate(180deg);
+}
