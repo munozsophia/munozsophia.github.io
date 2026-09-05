@@ -74,7 +74,7 @@
                     "faIconColors": {"bg": "#02343F", "fill": "#F0EDCC"},
                     "preview": {
                         "links": [
-                            {"href": "", "tooltipString": "open_website", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://github.com/munozsophia/computer-graphics-munozsa/tree/main", "tooltipString": "open_website", "faIcon": "fa-brands fa-github"},
                             {"href": "https://munozsophia.github.io/computer-graphics.html", "tooltipString": "open_website", "faIcon": "fa-regular fa-window-restore"}
                         ],
                         "screenshots": [],
