@@ -46,18 +46,6 @@
         margin: 0;
     }
 
-    .expandable-card-image-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 10px;
-
-        img {
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid var(--theme-standard-borders);
-        }
-    }
-
     .expandable-card-video {
         position: relative;
         width: 100%;

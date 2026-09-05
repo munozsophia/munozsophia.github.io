@@ -3,6 +3,7 @@ import "/src/styles/static-pages.scss"
 import React, {useEffect, useState} from 'react'
 import {useUtils} from "/src/hooks/utils.js"
 import ExpandableCard, {BackToPortfolioLink} from "/src/pages/shared/ExpandableCard.jsx"
+import ImageGrid from "/src/pages/shared/ImageGrid.jsx"
 
 /**
  * Standalone Computer Graphics course overview page. Each project
@@ -69,22 +70,14 @@ function ProjectCard({ project }) {
             {project.sketches?.length > 0 && (
                 <div>
                     <h6>Sketches</h6>
-                    <div className={`expandable-card-image-grid`}>
-                        {project.sketches.map((src, key) => (
-                            <img src={src} alt={`Sketch ${key + 1}`} key={key}/>
-                        ))}
-                    </div>
+                    <ImageGrid images={project.sketches}/>
                 </div>
             )}
 
             {project.screenshots?.length > 0 && (
                 <div>
                     <h6>Screenshots</h6>
-                    <div className={`expandable-card-image-grid`}>
-                        {project.screenshots.map((src, key) => (
-                            <img src={src} alt={`Screenshot ${key + 1}`} key={key}/>
-                        ))}
-                    </div>
+                    <ImageGrid images={project.screenshots}/>
                 </div>
             )}
 
