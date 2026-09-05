@@ -9,15 +9,21 @@
         {
             "id": 1,
             "faIcon": "fa-solid fa-cube",
-            "title": "Project 1",
-            "tags": ["JavaScript", "WebGL"],
-            "summary": "Brief one-line summary of what this project is about.",
-            "goals": "What this project set out to accomplish.",
-            "process": "The approach and steps taken to build it.",
-            "result": "The outcome, and anything learned along the way.",
+            "title": "Homework 2 - First Rendering Algorithm",
+            "tags": ["JavaScript", "HTML"],
+            "summary": "For homework2 I applied my first rendering algorithm in HTML and JavaScript.",
+            "goals": "The goal was to render a 3D cube by applying the pinhole camera perspective to create a 2D image. Additionally, provide moving camera views by key press.",
+            "process": "I applied simple 3D projection math using the camera vertices and cube vertices to display a cube.",
+            "result": "I learned how to render a cube and implement different camera movements within a canvas.",
             "sketches": [],
-            "screenshots": [],
-            "githubUrl": "",
+            "screenshots": [
+                "/images/content/hw2-rendered-cube.png",
+                "/images/content/hw2-camera-closer.png",
+                "/images/content/hw2-camera-farther.png",
+                "/images/content/hw2-camera-left.png",
+                "/images/content/hw2-camera-right.png"
+            ],
+            "githubUrl": "https://github.com/munozsophia/computer-graphics-munozsa/tree/main/homeworks/homework2",
             "videoEmbedUrl": ""
         }
     ]
