@@ -25,6 +25,21 @@
             ],
             "githubUrl": "https://github.com/munozsophia/computer-graphics-munozsa/tree/main/homeworks/homework2",
             "videoEmbedUrl": "https://www.youtube.com/embed/DyCT_gPENeU"
+        },
+        {
+            "id": 2,
+            "faIcon": "fa-solid fa-cube",
+            "title": "Project 1 - Pinhole Camera, Rasterized Display",
+            "tags": ["JavaScript", "HTML", "CSS", "Canvas API"],
+            "summary": "For Project1",
+            "goals": "",
+            "process": "",
+            "result": "",
+            "sketches": [],
+            "screenshots": [],
+            "githubUrl": "https://github.com/munozsophia/computer-graphics-munozsa/tree/main/projects/project1",
+            "deployedUrl": "https://rasterized-display.vercel.app/",
+            "videoEmbedUrl": ""
         }
     ]
 }

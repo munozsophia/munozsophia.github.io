@@ -97,6 +97,14 @@ function ProjectCard({ project }) {
                     </a>
                 </div>
             )}
+
+            {project.deployedUrl && (
+                <div>
+                    <a href={project.deployedUrl} target={`_blank`} rel={`noreferrer`}>
+                        <i className={`fa-regular fa-window-restore`}> View Deployed Project</i>
+                    </a>
+                </div>
+            )}
         </ExpandableCard>
     )
 }
