@@ -93,7 +93,7 @@ function ProjectCard({ project }) {
             {project.githubUrl && (
                 <div className={`expandable-card-links`}>
                     <a href={project.githubUrl} target={`_blank`} rel={`noreferrer`}>
-                        <i className={`fa-brands fa-github`}/> View code on GitHub
+                        <i className={`fa-brands fa-github`}/> View Code on GitHub
                     </a>
                 </div>
             )}
@@ -101,7 +101,7 @@ function ProjectCard({ project }) {
             {project.deployedUrl && (
                 <div>
                     <a href={project.deployedUrl} target={`_blank`} rel={`noreferrer`}>
-                        <i className={`fa-regular fa-window-restore`}> View Deployed Project</i>
+                        <i className={`fa-regular fa-window-restore`}/> View Deployed Project
                     </a>
                 </div>
             )}

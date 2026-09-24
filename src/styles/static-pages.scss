@@ -18,12 +18,13 @@
 @import 'layout/typography';
 @import 'layout/page';
 
-// Icon fonts - only solid + brands (used for GitHub icon), skip regular
-// and the fa-* base/shared styles that pull in the full icon set.
+// Icon fonts - solid + brands + regular (regular needed for fa-regular
+// icons like fa-window-restore used on external-link buttons).
 $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 @import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "@fortawesome/fontawesome-free/scss/solid.scss";
 @import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
 
 body {
     /* layout/_page.scss sets position:fixed + overflow-y:hidden on larger
