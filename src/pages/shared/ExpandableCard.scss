@@ -73,6 +73,8 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
+            font-family: inherit;
+            font-size: inherit;
 
             &:hover {
                 color: var(--theme-links-hover);
