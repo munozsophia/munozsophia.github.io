@@ -28,18 +28,25 @@
         },
         {
             "id": 2,
-            "faIcon": "fa-solid fa-cube",
+            "faIcon": "fa-solid fa-draw-polygon",
             "title": "Project 1 - Pinhole Camera, Rasterized Display",
             "tags": ["JavaScript", "HTML", "CSS", "Canvas API"],
-            "summary": "For Project1",
-            "goals": "",
-            "process": "",
-            "result": "",
-            "sketches": [],
-            "screenshots": [],
+            "summary": "For Project1 I rasterized lines, pixels, and triangles by applying Computer Graphics Concepts that use vector math.",
+            "goals": "The goal for this project was to create a web application in HTML, CSS, and JavaScript to develop a minigame using the canvas API and Computer Graphics concepts to implement a rasterized display in three different render levels.",
+            "process": "I designed a rasterized display with reusable block, diamond, and floor objects built once and instanced with their own position, scale, and color. Using pinhole camera projection, I implemented three rendering levels: canvas line-drawing, a rasterized 320x200 pixel display with a custom DDA line algorithm, and a triangle-rasterized level with a depth buffer and Lambertian shading. Along the way I handled near-plane clipping (line interpolation and the Sutherland-Hodgman algorithm), camera-relative object regeneration for an infinite floor, and bounding-box collision detection.",
+            "result": "I built a working trench-run minigame across three rendering levels: wireframe line drawing, a rasterized 320x200 pixel grid, and shaded triangle rasterization with a depth buffer. Along the way I learned how to solve real rendering problems firsthand, like fixing incorrect depth ordering by interpolating 1/z instead of z, clipping geometry against the near plane so the camera doesn't produce unreasonable coordinates behind it, and computing per-triangle shading from face normals and a light direction.",
+            "sketches": [
+                "/images/content/project1-sketch1.jpg",
+                "/images/content/project1-sketch2.jpg"
+            ],
+            "screenshots": [
+                "/images/content/project1-level1-rendered.png",
+                "/images/content/project1-level2-rendered.png",
+                "/images/content/project1-level3-rendered.png"
+            ],
             "githubUrl": "https://github.com/munozsophia/computer-graphics-munozsa/tree/main/projects/project1",
             "deployedUrl": "https://rasterized-display.vercel.app/",
-            "videoEmbedUrl": ""
+            "videoEmbedUrl": "https://www.youtube.com/embed/mena3BZRrkg"
         }
     ]
 }
