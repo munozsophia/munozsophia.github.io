@@ -47,6 +47,30 @@
             "githubUrl": "https://github.com/munozsophia/computer-graphics-munozsa/tree/main/projects/project1",
             "deployedUrl": "https://rasterized-display.vercel.app/",
             "videoEmbedUrl": "https://www.youtube.com/embed/mena3BZRrkg"
+        },
+        {
+            "id": 3,
+            "faIcon": "fa-solid fa-moon",
+            "title": "Project 2 - Cube World",
+            "tags": ["WebGL2", "JavaScript", "HTML", "CSS"],
+            "summary": "For Project2 I built a space-themed landscape and skyscape in WebGL2 using only one model, a 2x2x2 cube.",
+            "goals": "The goal for this project was to use WebGL2 (no libraries or frameworks) to build a landscape and a skyscape out of a single cube model, with each of five levels adding a new graphics concept: a cube grid with scaling, translation, vertex colors and an orbiting camera, terrain sampled from images, Bezier curve animation, and lighting with a skybox and atmosphere.",
+            "process": "I designed a NASA 'Mission Control' theme. Every object is the same cube mesh drawn with one instanced draw call, where each cube gets its own model matrix and color tint. The levels build up in order: a single spinning cube, a procedural crater landscape with an orbiting look-at camera, terrain whose heights and colors are sampled from NASA's CGI Moon Kit images with a resolution selector, a sky of cube-built satellites, astronauts and asteroids that follow cubic Bezier curves while rotating and scaling, and a final scene with a sun that lights the world and casts heightfield shadows, a starfield skybox, a spinning cube Earth, ground haze, and a realistic / colorful style toggle that uses color shading.",
+            "result": "I built a working WebGL2 scene across five levels, all made from one cube model. I learned how model, view and projection matrices work together, how instancing lets thousands of cubes render in one draw call, how to read image pixels with a canvas to drive terrain, how a cubic Bezier curve is computed from four control points, and how lighting, shadows, color shading and haze are done in the shaders.",
+            "sketches": [
+                "/images/content/project2-sketch1.jpg"
+            ],
+            "screenshots": [
+                "/images/content/project2-level0.png",
+                "/images/content/project2-level1.png",
+                "/images/content/project2-level2.png",
+                "/images/content/project2-level3.png",
+                "/images/content/project2-level4-realistic.png",
+                "/images/content/project2-level4-colorful.png"
+            ],
+            "githubUrl": "https://github.com/munozsophia/computer-graphics-munozsa/tree/main/projects/project2",
+            "deployedUrl": "https://cube-world-sand.vercel.app/",
+            "videoEmbedUrl": "https://www.youtube.com/embed/XYNQev5NaLc"
         }
     ]
 }
