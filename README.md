@@ -20,7 +20,7 @@ Interested in computer graphics, physics simulation and game development.
 
 ---
 
-## What's inside
+## What's Inside
 
 | Section | What it shows |
 | --- | --- |
@@ -44,13 +44,13 @@ Interested in computer graphics, physics simulation and game development.
 - ✉️ **Contact form** powered by [EmailJS](https://www.emailjs.com/)
 - 📈 **Google Analytics** page tracking
 
-## Tech stack
+## Tech Stack
 
 **Frontend:** React 18, React-Bootstrap / Bootstrap 5, Sass, jQuery, Swiper  
 **Tooling:** Vite, ESLint, gh-pages  
 **APIs:** Weatherbit.io, JokeAPI, Useless Facts, EmailJS
 
-## Run it locally
+## Run it Locally
 
 You need [Node.js](https://nodejs.org/) (LTS version).
 
@@ -86,7 +86,7 @@ npm run deploy
 
 Then commit and push the source changes as usual.
 
-## Editing content
+## Editing Content
 
 Almost all of the site's content lives in JSON, so most updates don't need any code:
 
@@ -101,7 +101,7 @@ public/data/
 
 Custom React components I added for this site live in `src/components/articles/`, including `ArticleClock`, `ArticleWeather`, `ArticleJoke`, and `ArticleFactGenerator`.
 
-## Course work
+## Course Work
 
 This site was also my **Individual Project 1** for *Web Application Programming and Hacking* (Dr. Phu Phung):
 
